@@ -7,3 +7,23 @@ The rules are pretty simple:
 3) Have fun!
 
 https://roadmap.sh/projects/number-guessing-game
+
+## Requirements
+As the game is CLI-based (for now), you will need to use command line to interact with it.
+### So what you need is:
+1) C++17 compatible compiler
+2) Terminal / Command Prompt
+
+## How to Run
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/arsnurt/myproj.git
+cd myproj
+```
+### 2. Compile the game (GCC or Clang)
+```bash
+g++ main.cpp -o game
+./game
+```
+### 3. Enjoy!
