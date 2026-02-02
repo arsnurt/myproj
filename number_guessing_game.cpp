@@ -57,7 +57,6 @@ void game(int chance, bool &sv_var) {
     int num_user;
     int cnt = 1;
     int num_program = randomNumber();
-    cout << num_program << '\n';
     while(chance) {
         cin >> num_user;
         if (num_user < num_program) {
