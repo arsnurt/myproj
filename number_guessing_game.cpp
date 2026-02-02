@@ -5,9 +5,11 @@ using namespace std;
 void menu();
 int randomNumber();
 void game(int chance, bool &sv_var);
+
 int main()
 {
     menu();
+    return 0;
 }
 
 void menu() {
@@ -68,20 +70,17 @@ void game(int chance, bool &sv_var) {
             ++cnt;
             cout << "Your number is greater than it is! Chances remaining: " << chance << '\n';
         }
-        else if (num_user == num_program) {
+        else {
             if(cnt == 1) {
                 cout << "Correct! You've guessed the number in " << cnt << " attempt." << '\n';
             }
             else if(cnt > 1) {
                 cout << "Correct! You've guessed the number in " << cnt << " attempts." << '\n';
             }
-            break;
-        }
-        else {
-            cout << "You have failed to guess the number. Better luck next time!" << '\n';
-            break;
+            return;
         }
     }
+    cout << "You have failed to guess the number. Better luck next time!" << '\n';
     cout << "Would you like to return to menu? (Y/N)" << '\n';
     cin >> yesno;
     if((yesno == 'Y') || (yesno == 'y')) {
